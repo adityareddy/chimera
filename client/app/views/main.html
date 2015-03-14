@@ -1,0 +1,444 @@
+
+	<div class="main-header">
+		<div class="main-title pull-left">
+			<h1>
+<i class="icon-dashboard"></i>
+Dashboard
+</h1>
+		</div>
+	</div>
+	<div class="content-body">
+		<div aria-hidden="aria-hidden" class="bg-export-modal fade hide modal" data-backdrop="static" id="bg-export-modal" role="dialog" tabindex="-1">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal" href="#">×</a>
+				<h3>Export CSV</h3>
+			</div>
+			<div class="modal-body">
+				<div class="text-center">
+					<div class="preparing-wrapper">
+						<p class="lead">
+							Preparing CSV export...
+						</p>
+						<div class="help-block">
+							We're currently crunching your data in the background. Depending on the size of the data set, this may take a few minutes, but we promise our servers are hard at work!
+						</div>
+					</div>
+					<div class="done-wrapper">
+						<p class="lead">
+							Your export is now available!
+						</p>
+						<div class="help-block">
+							Click on the 'Download' button below to begin downloading your file. For security purposes, the link will only remain active for 1 hour.
+						</div>
+					</div>
+					<div class="failed-wrapper alert alert-error">
+						<p class="lead">
+							There was a problem processing your data.
+						</p>
+						<div class="help-block">
+							The process did not complete successfully. Please try again. If the problem persists, <a ng-click="openSupportModal()" data-toggle="modal">contact Fleetio support.</a>
+						</div>
+					</div>
+					<br>
+					<div class="btn-toolbar">
+						<button class="btn download" data-loading-text="Please Wait...">
+							Download
+						</button>
+						<button class="btn cancel" data-complete-text="Close" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="alert">
+			<button class="close" data-dismiss="alert" type="button">×</button>
+			Finish setting up your user profile by
+			<a class="muted strikethrough" href="/users/settings/edit">setting your time zone</a>
+			and
+			<a href="/users/edit">adding a photo</a>.
+
+		</div>
+		<div class="row-fluid">
+			<div class="span5">
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h3 class="title">
+Vehicles
+</h3>
+								<div class="count">
+									<a href="/b278fd7fd6/vehicles"><span class="badge badge-muted">1</span>
+</a>
+								</div>
+
+							</div>
+							<div class="row-fluid">
+								<div class="span6 ac">
+									<div class="stat-block">
+										<a href="/b278fd7fd6/vehicles/assigned"><h1 class="extra-bold text-success no-b-margin">
+0
+</h1>
+</a>
+										<h6 class="no-t-margin bold">Assigned</h6>
+									</div>
+								</div>
+								<div class="span6 ac">
+									<div class="stat-block">
+										<a href="/b278fd7fd6/vehicles/unassigned"><h1 class="extra-bold text-warning no-b-margin">
+1
+</h1>
+</a>
+										<h6 class="no-t-margin bold">Unassigned</h6>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h3 class="title">
+Open Issues
+</h3>
+							</div>
+
+							<div class="row-fluid">
+								<div class="span6 ac">
+									<div class="stat-block">
+										<a href="/b278fd7fd6/issues"><h1 class="extra-bold no-b-margin text-success">
+0
+</h1>
+</a>
+										<h6 class="no-t-margin bold">Open</h6>
+									</div>
+								</div>
+								<div class="span6 ac">
+									<div class="stat-block">
+										<a href="/b278fd7fd6/issues?overdue=true"><h1 class="extra-bold no-b-margin text-success">
+0
+</h1>
+</a>
+										<h6 class="no-t-margin bold">Overdue</h6>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h3 class="title">
+Service Reminders
+</h3>
+								<div class="count">
+									<a href="/b278fd7fd6/service_reminders"><span class="badge badge-muted">0</span>
+</a>
+								</div>
+
+							</div>
+							<div class="row-fluid">
+								<div class="span6 ac">
+									<div class="stat-block">
+										<h1 class="extra-bold text-success no-b-margin">0</h1>
+
+										<h6 class="no-t-margin bold">Overdue</h6>
+									</div>
+								</div>
+								<div class="span6 ac">
+									<div class="stat-block">
+										<h1 class="extra-bold text-success no-b-margin">0</h1>
+
+										<h6 class="no-t-margin bold">Due Soon</h6>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h3 class="title">
+Renewal Reminders
+</h3>
+								<div class="count">
+									<a href="/b278fd7fd6/vehicle_renewal_reminders"><span class="badge badge-muted">0</span>
+</a>
+								</div>
+
+							</div>
+							<div class="row-fluid">
+								<div class="span6 ac">
+									<div class="stat-block">
+										<h1 class="extra-bold text-success no-b-margin">0</h1>
+
+										<h6 class="no-t-margin bold">Overdue</h6>
+									</div>
+								</div>
+								<div class="span6 ac">
+									<div class="stat-block">
+										<h1 class="extra-bold text-success no-b-margin">0</h1>
+
+										<h6 class="no-t-margin bold">Due Soon</h6>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h3 class="title">
+Service Costs 
+</h3>
+								<div class="box-toolbar">
+									<span class="loading  " id="service-costs-loading" style="display: none;"><img alt="Loading" class="loading-img" src="//d3hg8hj412aefj.cloudfront.net/assets/ajax-loader-a92b646971739d6c67cb2dd1b6c89fd5.gif"></span>
+								</div>
+
+
+							</div>
+							<div class="box-content padded">
+								<div id="service-costs-chart" data-highcharts-chart="1">
+									<div class="highcharts-container" id="highcharts-2" style="position: relative; overflow: hidden; width: 207px; height: 150px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+										<svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="207" height="150">
+											<desc>Created with Highcharts 4.0.1</desc>
+											<defs>
+												<clipPath id="highcharts-3">
+													<rect x="0" y="0" width="207" height="104"></rect>
+												</clipPath>
+											</defs>
+											<rect x="0" y="0" width="207" height="150" strokeWidth="0" fill="#fbfbfb" class=" highcharts-background"></rect>
+											<g class="highcharts-grid" zIndex="1"></g>
+											<g class="highcharts-grid" zIndex="1">
+												<path fill="none" d="M 0 62.5 L 207 62.5" stroke="#DDDDDD" stroke-width="1" zIndex="1" opacity="1"></path>
+											</g>
+											<g class="highcharts-axis" zIndex="2">
+												<path fill="none" d="M 68.5 114 L 68.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 103.5 114 L 103.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 137.5 114 L 137.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 172.5 114 L 172.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 207.5 114 L 207.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 34.5 114 L 34.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M -0.5 114 L -0.5 124" stroke="#C0D0E0" stroke-width="1" opacity="undefined"></path>
+												<path fill="none" d="M 0 114.5 L 207 114.5" stroke="#CCCCCC" stroke-width="1" zIndex="7" visibility="visible"></path>
+											</g>
+											<g class="highcharts-axis" zIndex="2"></g>
+											<g class="highcharts-series-group" zIndex="3">
+												<g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(0,10) scale(1 1)" style="" clip-path="url(#highcharts-3)">
+													<rect x="8.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#EC8526" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="42.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#EC8526" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="77.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#EC8526" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="111.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#EC8526" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="146.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#EC8526" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="180.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#EC8526" rx="0" ry="0" stroke-width="1"></rect>
+												</g>
+												<g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(0,10) scale(1 1)" clip-path="none"></g>
+											</g>
+											<g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7">
+												<text x="17.25" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Oct</text>
+												<text x="51.75" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Nov</text>
+												<text x="86.25" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Dec</text>
+												<text x="120.75" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Jan</text>
+												<text x="155.25" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Feb</text>
+												<text x="189.75" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Mar</text>
+											</g>
+											<g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"></g>
+											<g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)">
+												<path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" transform="translate(1, 1)"></path>
+												<path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="3" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" transform="translate(1, 1)"></path>
+												<path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="1" isShadow="true" stroke="black" stroke-opacity="0.15" transform="translate(1, 1)"></path>
+												<path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="1"></path>
+												<text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"></text>
+											</g>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h3 class="title">
+Fuel Costs
+</h3>
+								<div class="box-toolbar">
+									<span class="loading  " id="fuel-costs-loading" style="display: none;"><img alt="Loading" class="loading-img" src="//d3hg8hj412aefj.cloudfront.net/assets/ajax-loader-a92b646971739d6c67cb2dd1b6c89fd5.gif"></span>
+								</div>
+
+
+							</div>
+							<div class="box-content padded">
+								<div id="fuel-costs-chart" data-highcharts-chart="0">
+									<div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 207px; height: 150px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+										<svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="207" height="150">
+											<desc>Created with Highcharts 4.0.1</desc>
+											<defs>
+												<clipPath id="highcharts-1">
+													<rect x="0" y="0" width="207" height="104"></rect>
+												</clipPath>
+											</defs>
+											<rect x="0" y="0" width="207" height="150" strokeWidth="0" fill="#fbfbfb" class=" highcharts-background"></rect>
+											<g class="highcharts-grid" zIndex="1"></g>
+											<g class="highcharts-grid" zIndex="1">
+												<path fill="none" d="M 0 62.5 L 207 62.5" stroke="#DDDDDD" stroke-width="1" zIndex="1" opacity="1"></path>
+											</g>
+											<g class="highcharts-axis" zIndex="2">
+												<path fill="none" d="M 68.5 114 L 68.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 103.5 114 L 103.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 137.5 114 L 137.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 172.5 114 L 172.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 207.5 114 L 207.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M 34.5 114 L 34.5 124" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+												<path fill="none" d="M -0.5 114 L -0.5 124" stroke="#C0D0E0" stroke-width="1" opacity="undefined"></path>
+												<path fill="none" d="M 0 114.5 L 207 114.5" stroke="#CCCCCC" stroke-width="1" zIndex="7" visibility="visible"></path>
+											</g>
+											<g class="highcharts-axis" zIndex="2"></g>
+											<g class="highcharts-series-group" zIndex="3">
+												<g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(0,10) scale(1 1)" style="" clip-path="url(#highcharts-1)">
+													<rect x="8.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#6FB9E8" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="42.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#6FB9E8" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="77.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#6FB9E8" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="111.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#6FB9E8" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="146.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#6FB9E8" rx="0" ry="0" stroke-width="1"></rect>
+													<rect x="180.5" y="52.5" width="17" height="0" stroke="#FFFFFF" fill="#6FB9E8" rx="0" ry="0" stroke-width="1"></rect>
+												</g>
+												<g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(0,10) scale(1 1)" clip-path="none"></g>
+											</g>
+											<g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7">
+												<text x="17.25" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Oct</text>
+												<text x="51.75" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Nov</text>
+												<text x="86.25" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Dec</text>
+												<text x="120.75" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Jan</text>
+												<text x="155.25" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Feb</text>
+												<text x="189.75" text-anchor="middle" style="width:15px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134" opacity="1">Mar</text>
+											</g>
+											<g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"></g>
+											<g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)">
+												<path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" transform="translate(1, 1)"></path>
+												<path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="3" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" transform="translate(1, 1)"></path>
+												<path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="1" isShadow="true" stroke="black" stroke-opacity="0.15" transform="translate(1, 1)"></path>
+												<path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="1"></path>
+												<text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"></text>
+											</g>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span5">
+				<div class="box">
+					<div class="box-header">
+						<h3 class="title">
+Recent Vehicles
+</h3>
+						<ul class="box-toolbar">
+							<li class="toolbar-link">
+								<a href="/b278fd7fd6/vehicles"><i class="icon-truck"></i>
+All Vehicles
+</a>
+							</li>
+						</ul>
+
+					</div>
+					<table class="table table-boxed table-list table-striped table-hover">
+						<tbody>
+							<tr>
+								<td class="icon">
+									<a href="/b278fd7fd6/vehicles/95715">
+										<img alt="CAR" fit="crop" h="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAFe0lEQVRoQ+1YaShmbxQ/trGEkUGWSDHJGEmILwrZoxQfhAiDyYRmrFES0SBb2bI2TTLzAR9EtqSUkvgiZStbiixZyr78O7fu7T73vfdd/O80b+Y+9X65z/Occ37nd7bn1QgKCnqGf2hpSIBfOdsSw6+cYJAYlhh+ZR6QQvqVESoDR2JYYviVeUAK6VdGqFS0pJDmxkB6ejp8/PgRDAwMqK2npye4uLiA9fV1GBwchOPjY6WzICAgAN6/fw8PDw/MndPTUxgaGpIrIzg4GOzs7OD5WfF/FShvbGwMrq+veWUKMpyUlARRUVGgp6cnaAwasLy8DGVlZYIK2Jd//PgBFhYWhDw0LCsrC/b39wX1NDc3g4ODg9KOxYM7OztQVVUFu7u7xD1ewN+/fwc3NzelFRwdHcG3b9/ksu3l5UU5RlNTk5CLTuvr66N+QquxsRGcnJyUtoc+eHV1BV+/fiVAywBGo7y9vVUWjh79/Pmz4L3i4mLw9fXl3d/Y2IDs7GzRAaPAzc1NKoLoRQCWx8L8/DwcHh5Suezj4wNGRkZKM6Wvrw+dnZ3w7t07XlB3d3eUUdzwow9zGb65uYG1tTXQ1tZm5L158wZsbGyYWkNvYM2prKyEubk56hMBuKamBlxdXQmjUHhFRQUsLS0R3/nyamtrCzIzM2VAYdHJycmRCWf2wYGBAejq6uJ1CBcwOiYjI0PmLDq2tbUVLC0tmT1Mmba2NhgeHiYB46GOjg7Q0dERPMzWgOeRNbaXb29v4cuXLzIFCIuHu7u73DTZ29sD7Ah8iwsYC9ynT594z+L36OhoxYD5whmLUWJioqChyJqtrS3VZhA4tigseOxlYmJCOZKdAggOIwdbFL1QRn5+PqyursroUwVwbm4uBAYGEoBbWlpgZGSEZDgmJgZSUlJAQ0ODOTw7O0uV9v+z0NupqamE3MnJSTg/PwfUyV4TExPQ0NCgEPDBwQEkJycT5xwdHSEkJATCw8OJ1OFGHZPDWCXDwsIIIWIArqurgw8fPjBysYiUl5dTgGtra4mU4AOCF1/alvDu9PQ0pYdeDGAsNpGRkUQo/P79G3BYeOkyMzOjCpGuri4jgp0m3d3dYG1tLeMM7Ajs9VLACwsLUFpaSsj6owzjtBYbG0soxLGvqamJ+sYtMPiNL6peCphvIGIAx8XFQUJCgqg5jO3A3t6eAIyzLj3nYhsxNTWV2Y+Pj5fL8P39PWD401MbpomxsTG8fftWJhgFQ/olVbq3t5fqeY+Pj5RyBJOWlkYB4mtbyqQG9s36+nqYmppijivbh7FrhIaGEmq4LYxhGA1sb28n8g2V//z5E/r7+2Vs5Rsm2ML5iqAygPEMDjklJSWCgIX6MLZArAv0yw4FCALGTb4BAdlDIewnnKenJxQWFoKhoSGBgR0+PT09YGVlpSxG4tzl5SU1sdFPT2X7MKYIFll2z5cLGIHg40FLS0vGUHwcbG9vU887fLlwXz04SGBI4djHlx5nZ2dUsUIW2Ovk5ISao83NzYkOgU7GcRPXHwOMwpE5Pz8/lZn59esX08L4ZODwjjM53yooKAB/f39ia2VlBfLy8lQCrHJI0xpVBT0zMwPV1dXUdQwr7L3s6st9sXBB47OxqKiIiBp2xCjLMMrldgbUjdMbXQQF//HAooR9lNs2uOGIRW18fJz57OLiQs3T7EeFopmc7/nINhSrtrOzM6ND3tub788Ldm9X+CdeREQEeHh4UG9ZNBwLAhaVxcVFGB0dVTn0//YFhYD/toFi65cAi+1RdZMnMaxujIhtj8Sw2B5VN3kSw+rGiNj2SAyL7VF1kycxrG6MiG2PxLDYHlU3eRLD6saI2PZIDIvtUXWTJzGsboyIbc8/x/B/EgchslYAzWAAAAAASUVORK5CYII="
+										w="30" width="30" data-src="data:holder.js/30x30/placeholder/text:CAR" style="width: 30px; height: 30px;">
+									</a>
+								</td>
+								<td class="no-l-padding">
+									<a href="/b278fd7fd6/vehicles/95715">test</a>
+									<small class="muted">0 mi</small>
+									<ul class="inline no-margin">
+										<li>
+											<small class="muted">
+<i class="icon-flag"></i>
+<a class="muted" href="/b278fd7fd6/vehicles?q%5Bvehicle_status_id_in%5D%5B%5D=78870">Active</a>
+</small>
+										</li>
+										<li>
+											<small class="muted">
+<i class="icon-folder-close"></i>
+<a class="muted" href="/b278fd7fd6/vehicles?q%5Bvehicle_type_id_in%5D%5B%5D=222712">Car</a>
+</small>
+										</li>
+									</ul>
+								</td>
+								<td class="actions">
+									<a class="close tr-hover-show" data-method="delete" href="/b278fd7fd6/recent_vehicles/95715" rel="nofollow">×
+</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+			<div class="span2">
+				<h4>Fleetio Updates</h4>
+				<ul class="unstyled" id="fleetio-updates">
+					<li>
+						<span class="label label-warning">Update</span>
+						Locations are now <strong>Groups</strong>. This is simply a rename - functionality is still the same.
+						<div class="date">Jan 21</div>
+					</li>
+					<li>
+						<span class="label label-warning">Update</span>
+						People are now <strong>Contacts</strong>. This is simply a rename - functionality is still the same.
+						<div class="date">Jan 16</div>
+					</li>
+					<li>
+						<span class="label label-success">New</span>
+						<a href="/b278fd7fd6/labels">Labels</a>
+						can now be managed by account administrators.
+						<div class="date">Nov 4</div>
+					</li>
+					<li>
+						<span class="label label-warning">Update</span>
+						<a href="/b278fd7fd6/account/custom_fields">Custom Fields</a>
+						can now be setup as date or checkbox inputs!
+						<div class="date">Oct 2</div>
+					</li>
+					<li>
+						<span class="label label-warning">Update</span>
+						<a href="/b278fd7fd6/service_entries">Service Entries</a> can now be broken down into labor and parts subtotals.
+						<div class="date">Sep 25</div>
+					</li>
+					<li>
+						<span class="label label-warning">Update</span>
+						<a href="/b278fd7fd6/issues?q%5Bstate_eq%5D=resolved">Resolved issues</a> now appear in the
+						<a href="/b278fd7fd6/reports/service_entries">Service Entries by Vehicle Report</a>.
+						<div class="date">Sep 23</div>
+					</li>
+					<li>
+						<span class="label label-warning">Update</span>
+						Service Types are now <em>Service Tasks</em>. We just changed the name - they still function the same.
+						<div class="date">Sep 19</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
