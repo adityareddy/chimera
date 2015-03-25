@@ -52,12 +52,12 @@ module.exports = function(grunt) {
 			gruntfile: {
 				files: ['Gruntfile.js']
 			},
-			  server: {
-    files: ['.rebooted'],
-    options: {
-      livereload: true
-    }
-  } ,
+			server: {
+				files: ['.rebooted'],
+				options: {
+					livereload: true
+				}
+			},
 			livereload: {
 				options: {
 					livereload: '<%= connect.options.livereload %>'
@@ -167,40 +167,38 @@ module.exports = function(grunt) {
 			}
 		},
 
-nodemon: {
-  dev: {
-    script: 'server/server.js',
-    options: {
-      nodeArgs: ['--debug'],
-      env: {
-        PORT: '3000'
-      },
-      // omit this property if you aren't serving HTML files and
-      // don't want to open a browser tab on start
-      callback: function (nodemon) {
-        nodemon.on('log', function (event) {
-          console.log(event.colour);
-        });
-
-        // opens browser on initial server start
-        nodemon.on('config:update', function () {
-          // Delay before server listens on port
-          setTimeout(function() {
-            require('open')('http://localhost:3000');
-          }, 1000);
-        });
-
-        // refreshes browser when server reboots
-        nodemon.on('restart', function () {
-          // Delay before server listens on port
-          setTimeout(function() {
-            require('fs').writeFileSync('.rebooted', 'rebooted');
-          }, 1000);
-        });
-      }
-    }
-  }
-},
+		nodemon: {
+			dev: {
+				script: 'server/server.js',
+				options: {
+					nodeArgs: ['--debug'],
+					env: {
+						PORT: '3000'
+					},
+					// omit this property if you aren't serving HTML files and
+					// don't want to open a browser tab on start
+					callback: function(nodemon) {
+						nodemon.on('log', function(event) {
+							console.log(event.colour);
+						});
+						// opens browser on initial server start
+						nodemon.on('config:update', function() {
+							// Delay before server listens on port
+							setTimeout(function() {
+								require('open')('http://localhost:3000');
+							}, 1000);
+						});
+						// refreshes browser when server reboots
+						nodemon.on('restart', function() {
+							// Delay before server listens on port
+							setTimeout(function() {
+								require('fs').writeFileSync('.rebooted', 'rebooted');
+							}, 1000);
+						});
+					}
+				}
+			}
+		},
 
 		loopback_sdk_angular: {
 			services: {
@@ -287,30 +285,30 @@ nodemon: {
 		// By default, your `index.html`'s <!-- Usemin block --> will take care of
 		// minification. These next options are pre-configured if you do not wish
 		// to use the Usemin blocks.
-		 cssmin: {
-		   dist: {
-		     files: {
-		       '<%= yeoman.dist %>/styles/main.css': [
-		         '.tmp/styles/{,*/}*.css'
-		       ]
-		     }
-		   }
-		 },
-		 uglify: {
-		   dist: {
-		     files: {
-		       '<%= yeoman.dist %>/scripts/scripts.js': [
-		         '<%= yeoman.dist %>/scripts/scripts.js'
-		       ]
-		     }
-		   }
-		 },
-		 concat: {
-		   dist: {
-				 src: ['<%= yeoman.app %>/modules/**/{,*/}*.js'],
-				 dest: '<%= yeoman.dist %>/scripts/scripts.js'
-			 }
-		 },
+// 		cssmin: {
+//			dist: {
+//				files: {
+//					'<%= yeoman.dist %>/styles/main.css': [
+//						'.tmp/styles/{,*/}*.css'
+//					]
+//				}
+//			}
+//		},
+//		uglify: {
+//			dist: {
+//				files: {
+//					'<%= yeoman.dist %>/scripts/scripts.js': [
+//						'<%= yeoman.dist %>/scripts/scripts.js'
+//					]
+//				}
+//			}
+//		},
+//		concat: {
+//			dist: {
+//				src: ['<%= yeoman.app %>/modules/**/{,*/}*.js'],
+//				dest: '<%= yeoman.dist %>/scripts/scripts.js'
+//			}
+//		}, 
 
 		imagemin: {
 			dist: {
@@ -435,7 +433,7 @@ nodemon: {
 
 		grunt.task.run([
 			'clean:server',
-			'includeSource',
+			'includeSource:server',
 			'loopback_sdk_angular',
 			'wiredep',
 			'concurrent:server',
@@ -459,7 +457,7 @@ nodemon: {
 
 	grunt.registerTask('build', [
 		'clean:dist',
-		'includeSource',
+		'includeSource:dist',
 		'loopback_sdk_angular',
 		'wiredep',
 		'useminPrepare',
