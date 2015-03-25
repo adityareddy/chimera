@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- build:css(.) styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css" />
+	<link rel="stylesheet" href="bower_components/angular-toasty/css/ng-toasty.css" />
+	<link rel="stylesheet" href="bower_components/trNgGrid/release/trNgGrid.min.css" />
+	<link rel="stylesheet" href="bower_components/RWD-Table-Patterns/dist/css/rwd-table.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/main.css -->
+	<!-- include: "type": "css", "files": "styles/*.css" -->
+	<link rel="stylesheet" href="/styles/AdminLTE.min.css" />
+	<link rel="stylesheet" href="/styles/blue.css" />
+	<link rel="stylesheet" href="/styles/main.css" />
+	<link rel="stylesheet" href="/styles/skin-blue.min.css" />
+	<!-- /include -->
+	<!-- endbuild -->
+</head>
+<body ng-class="$root.sidebarCollapse" ng-app="gorgonApp" class="skin-blue">
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	<!-- Add your site or application content here -->
+	<ui-view></ui-view>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-XXXXX-X');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- build:js(.) scripts/oldieshim.js -->
+	<!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+	<!-- endbuild -->
+
+	<!-- build:js(.) scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/angular-touch/angular-touch.js"></script>
+	<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/api-check/dist/apiCheck.js"></script>
+	<script src="bower_components/angular-formly/dist/formly.js"></script>
+	<script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
+	<script src="bower_components/sweetalert/lib/sweet-alert.js"></script>
+	<script src="bower_components/angular-sweetalert/SweetAlert.js"></script>
+	<script src="bower_components/angular-toasty/js/ng-toasty.js"></script>
+	<script src="bower_components/angular-autoFields-bootstrap/autofields.min.js"></script>
+	<script src="bower_components/angular-autoFields-bootstrap/autofields-bootstrap.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="bower_components/angular-gravatar/build/md5.js"></script>
+	<script src="bower_components/angular-gravatar/build/angular-gravatar.js"></script>
+	<script src="bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+	<script src="bower_components/trNgGrid/release/trNgGrid.min.js"></script>
+	<script src="bower_components/RWD-Table-Patterns/dist/js/rwd-table.js"></script>
+	<script src="bower_components/lodash/dist/lodash.compat.js"></script>
+	<script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js({.tmp,app}) scripts/scripts.js -->
+	<!-- JS -->
+	<!-- include: "type": "js", "files": "scripts/*.js" -->
+	<script src="/scripts/app.js"></script>
+	<script src="/scripts/framework.js"></script>
+	<script src="/scripts/icheck.min.js"></script>
+	<script src="/scripts/lb-services.js"></script>
+	<!-- /include -->
+	<!-- MODULES -->
+	<!-- include: "type": "js", "files": "modules/**/*.js" -->
+	<script src="/modules/core/app.core.js"></script>
+	<script src="/modules/core/config/core.config.js"></script>
+	<script src="/modules/core/config/core.routes.js"></script>
+	<script src="/modules/core/controllers/main.js"></script>
+	<script src="/modules/core/directives/admin-header.js"></script>
+	<script src="/modules/core/directives/input-checkbox.js"></script>
+	<script src="/modules/core/directives/responsive-table.js"></script>
+	<script src="/modules/core/directives/small-box.directive.js"></script>
+	<script src="/modules/core/services/core.service.js"></script>
+	<script src="/modules/maps/app.maps.js"></script>
+	<script src="/modules/maps/config/maps.config.js"></script>
+	<script src="/modules/maps/config/maps.routes.js"></script>
+	<script src="/modules/maps/controllers/maps.js"></script>
+	<script src="/modules/products/app.products.js"></script>
+	<script src="/modules/products/config/products.config.js"></script>
+	<script src="/modules/products/config/products.routes.js"></script>
+	<script src="/modules/products/controllers/categories.ctrl.js"></script>
+	<script src="/modules/products/controllers/products.ctrl.js"></script>
+	<script src="/modules/settings/app.settings.js"></script>
+	<script src="/modules/settings/config/settings.config.js"></script>
+	<script src="/modules/settings/config/settings.routes.js"></script>
+	<script src="/modules/settings/controllers/settings.ctrl.js"></script>
+	<script src="/modules/users/app.users.js"></script>
+	<script src="/modules/users/config/users.auth.js"></script>
+	<script src="/modules/users/config/users.config.js"></script>
+	<script src="/modules/users/config/users.routes.js"></script>
+	<script src="/modules/users/controllers/login.ctrl.js"></script>
+	<script src="/modules/users/controllers/profile.ctrl.js"></script>
+	<script src="/modules/users/controllers/register.ctrl.js"></script>
+	<script src="/modules/users/controllers/users.ctrl.js"></script>
+	<script src="/modules/users/directives/login.js"></script>
+	<script src="/modules/users/directives/register.js"></script>
+	<script src="/modules/users/services/appauth.service.js"></script>
+	<script src="/modules/vehicles/app.vehicles.js"></script>
+	<script src="/modules/vehicles/config/vehicles.config.js"></script>
+	<script src="/modules/vehicles/config/vehicles.routes.js"></script>
+	<script src="/modules/vehicles/controllers/vehicles.js"></script>
+	<script src="/modules/vehicles/services/vehicle.service.js"></script>
+	<!-- /include -->
+	<!-- endbuild -->
+</body>
+
+</html>
