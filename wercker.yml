@@ -4,6 +4,11 @@ build:
   # The steps that will be executed on build
   steps:
     # A step that executes `npm install` command
+    - script:
+        name: echo nodejs information
+        code: |
+          npm cache clear
+
     - npm-install
     # A step that executes `npm test` command
     - npm-test
