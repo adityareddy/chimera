@@ -5,7 +5,7 @@ build:
   steps:
     # A step that executes `npm install` command
     - script:
-        name: echo nodejs information
+        name: clear cache
         code: |
           npm cache clear
 
